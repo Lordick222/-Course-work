@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Rus">
+      <UniqueIdentifier>{08032bbd-61f7-4f46-9803-bd15fcf09f26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Usa">
+      <UniqueIdentifier>{559e78ba-ff16-41be-8ce8-e9bcfd01fe51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Virtual">
+      <UniqueIdentifier>{16e138b1-69ff-4490-95b1-47c184bcd258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\USA">
+      <UniqueIdentifier>{e0e7ca1e-edea-4891-8307-31bd6ca30274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\RUS">
+      <UniqueIdentifier>{1c965e9f-1881-49e7-b28f-a444fb9b0bf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\VIrtual">
+      <UniqueIdentifier>{3fb4aa60-d813-4adb-9f9a-78d5248610a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="USATank.h">
+      <Filter>Файлы заголовков\USA</Filter>
+    </ClInclude>
+    <ClInclude Include="RUSTank.h">
+      <Filter>Файлы заголовков\RUS</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>Файлы заголовков\VIrtual</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="ArmorCar.h">
+      <Filter>Файлы заголовков\VIrtual</Filter>
+    </ClInclude>
+    <ClInclude Include="Robot.h">
+      <Filter>Файлы заголовков\VIrtual</Filter>
+    </ClInclude>
+    <ClInclude Include="Howitzer.h">
+      <Filter>Файлы заголовков\VIrtual</Filter>
+    </ClInclude>
+    <ClInclude Include="Fighter.h">
+      <Filter>Файлы заголовков\VIrtual</Filter>
+    </ClInclude>
+    <ClInclude Include="USARobot.h">
+      <Filter>Файлы заголовков\USA</Filter>
+    </ClInclude>
+    <ClInclude Include="RUSRobot.h">
+      <Filter>Файлы заголовков\RUS</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RUSTank.cpp">
+      <Filter>Исходные файлы\Rus</Filter>
+    </ClCompile>
+    <ClCompile Include="USATank.cpp">
+      <Filter>Исходные файлы\Usa</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Исходные файлы\Virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="ArmorCar.cpp">
+      <Filter>Исходные файлы\Virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="Robot.cpp">
+      <Filter>Исходные файлы\Virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="Howitzer.cpp">
+      <Filter>Исходные файлы\Virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="Fighter.cpp">
+      <Filter>Исходные файлы\Virtual</Filter>
+    </ClCompile>
+    <ClCompile Include="USARobot.cpp">
+      <Filter>Исходные файлы\Usa</Filter>
+    </ClCompile>
+    <ClCompile Include="RUSRobot.cpp">
+      <Filter>Исходные файлы\Rus</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
