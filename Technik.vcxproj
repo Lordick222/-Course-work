@@ -24,9 +24,15 @@
     <ClInclude Include="Header.h" />
     <ClInclude Include="Howitzer.h" />
     <ClInclude Include="Robot.h" />
+    <ClInclude Include="RUSArmorCar.h" />
+    <ClInclude Include="RUSFighter.h" />
+    <ClInclude Include="RUSHowitzer.h" />
     <ClInclude Include="RUSRobot.h" />
     <ClInclude Include="RUSTank.h" />
     <ClInclude Include="Tank.h" />
+    <ClInclude Include="USAArmorCar.h" />
+    <ClInclude Include="USAFighter.h" />
+    <ClInclude Include="USAHowitzer.h" />
     <ClInclude Include="USARobot.h" />
     <ClInclude Include="USATank.h" />
   </ItemGroup>
@@ -35,10 +41,16 @@
     <ClCompile Include="Fighter.cpp" />
     <ClCompile Include="Howitzer.cpp" />
     <ClCompile Include="Robot.cpp" />
+    <ClCompile Include="RUSArmorCar.cpp" />
+    <ClCompile Include="RUSFighter.cpp" />
+    <ClCompile Include="RUSHowitzer.cpp" />
     <ClCompile Include="RUSRobot.cpp" />
     <ClCompile Include="RUSTank.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Tank.cpp" />
+    <ClCompile Include="USAArmorCar.cpp" />
+    <ClCompile Include="USAFighter.cpp" />
+    <ClCompile Include="USAHowitzer.cpp" />
     <ClCompile Include="USARobot.cpp" />
     <ClCompile Include="USATank.cpp" />
   </ItemGroup>

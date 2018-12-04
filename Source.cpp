@@ -1,14 +1,14 @@
 #include "Header.h"
-#include "RUSRobot.h"
-#include "USARobot.h"
+#include "RUSFighter.h"
+#include "USAFighter.h"
 
 int main()
 {
-	RUSRobot *one = new RUSRobot;
-	one->EnterRobot();
-	one->OutRobot();
-	USARobot *two = new USARobot;
-	two->EnterRobot();
-	two->OutRobot();
+	RUSFighter *one = new RUSFighter;
+	one->EnterFighter();
+	one->OutFighter();
+	USAFighter *two = new USAFighter;
+	two->EnterFighter();
+	two->OutFighter();
 	system("pause");
 }

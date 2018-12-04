@@ -9,10 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Файлы ресурсов">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
     <Filter Include="Исходные файлы\Rus">
       <UniqueIdentifier>{08032bbd-61f7-4f46-9803-bd15fcf09f26}</UniqueIdentifier>
     </Filter>
@@ -30,6 +26,10 @@
     </Filter>
     <Filter Include="Файлы заголовков\VIrtual">
       <UniqueIdentifier>{3fb4aa60-d813-4adb-9f9a-78d5248610a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -63,6 +63,24 @@
     <ClInclude Include="RUSRobot.h">
       <Filter>Файлы заголовков\RUS</Filter>
     </ClInclude>
+    <ClInclude Include="RUSHowitzer.h">
+      <Filter>Файлы заголовков\RUS</Filter>
+    </ClInclude>
+    <ClInclude Include="USAHowitzer.h">
+      <Filter>Файлы заголовков\USA</Filter>
+    </ClInclude>
+    <ClInclude Include="USAArmorCar.h">
+      <Filter>Файлы заголовков\USA</Filter>
+    </ClInclude>
+    <ClInclude Include="RUSArmorCar.h">
+      <Filter>Файлы заголовков\RUS</Filter>
+    </ClInclude>
+    <ClInclude Include="RUSFighter.h">
+      <Filter>Файлы заголовков\RUS</Filter>
+    </ClInclude>
+    <ClInclude Include="USAFighter.h">
+      <Filter>Файлы заголовков\USA</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RUSTank.cpp">
@@ -93,6 +111,24 @@
       <Filter>Исходные файлы\Usa</Filter>
     </ClCompile>
     <ClCompile Include="RUSRobot.cpp">
+      <Filter>Исходные файлы\Rus</Filter>
+    </ClCompile>
+    <ClCompile Include="RUSHowitzer.cpp">
+      <Filter>Исходные файлы\Rus</Filter>
+    </ClCompile>
+    <ClCompile Include="USAHowitzer.cpp">
+      <Filter>Исходные файлы\Usa</Filter>
+    </ClCompile>
+    <ClCompile Include="USAArmorCar.cpp">
+      <Filter>Исходные файлы\Usa</Filter>
+    </ClCompile>
+    <ClCompile Include="RUSArmorCar.cpp">
+      <Filter>Исходные файлы\Rus</Filter>
+    </ClCompile>
+    <ClCompile Include="USAFighter.cpp">
+      <Filter>Исходные файлы\Usa</Filter>
+    </ClCompile>
+    <ClCompile Include="RUSFighter.cpp">
       <Filter>Исходные файлы\Rus</Filter>
     </ClCompile>
   </ItemGroup>
