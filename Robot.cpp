@@ -127,6 +127,9 @@ void Robot::set_Mans(std::string a) {
 void Robot::set_Walk(std::string a) {
 	m_walk = a;
 }
+void Robot::set_Country(std::string a) {
+	m_country = a;
+}
 Robot::~Robot()
 {
 }

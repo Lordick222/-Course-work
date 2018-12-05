@@ -142,6 +142,9 @@ void Tank::set_Mans(std::string a) {
 void Tank::set_Walk(std::string a) {
 	m_walk = a; 
 }
+void Tank::set_Country(std::string a) {
+	m_country = a;
+}
 
 Tank::~Tank()
 {

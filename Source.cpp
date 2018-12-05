@@ -27,7 +27,7 @@ int main()
 		a = mistake(5);
 		switch (a)
 		{
-		case 1:std::cout << "Complete!\n\n";
+		case 1:load(); std::cout << "Complete!\n\n";
 			break;
 		case 2:
 			while (1)
@@ -51,7 +51,7 @@ int main()
 					{
 						flag = 0;
 						break;
-					}
+					}break;
 				case 2:
 					technikmenu(); std::cout << "\t\t"; a = mistake(6);
 					switch (a)
@@ -67,7 +67,7 @@ int main()
 					{
 						flag = 0;
 						break;
-					}
+					}break;
 				case 3:
 					technikmenu(); std::cout << "\t\t"; a = mistake(6);
 					switch (a)
@@ -115,7 +115,7 @@ int main()
 					{
 						flag = 0;
 						break;
-					}
+					}break;
 				case 2:
 					technikmenu(); std::cout << "\t\t"; a = mistake(6);
 					switch (a)
@@ -131,7 +131,7 @@ int main()
 					{
 						flag = 0;
 						break;
-					}
+					}break;
 				case 3:
 					technikmenu(); std::cout << "\t\t"; a = mistake(6);
 					switch (a)
@@ -157,7 +157,7 @@ int main()
 				}
 			}
 			break;
-		case 4:std::cout << "Complete!\n\n";
+		case 4:save(); std::cout << "Complete!\n\n";
 			break;
 		case 5:flag = 1;break;
 		}

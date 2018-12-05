@@ -129,6 +129,9 @@ void Howitzer::set_Mans(std::string a) {
 void Howitzer::set_Walk(std::string a) {
 	m_walk = a;
 }
+void Howitzer::set_Country(std::string a) {
+	m_country = a;
+}
 
 Howitzer::~Howitzer()
 {

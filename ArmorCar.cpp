@@ -142,6 +142,9 @@ void ArmorCar::set_Mans(std::string a) {
 void ArmorCar::set_Walk(std::string a) {
 	m_walk = a;
 }
+void ArmorCar::set_Country(std::string a) {
+	m_country = a;
+}
 
 ArmorCar::~ArmorCar()
 {

@@ -23,39 +23,362 @@ Howitzer**howitzer = new Howitzer*;
 
 void load()
 {
+	std::string read;
 	std::ifstream in("F:\\”чеба\\3 курс 1 сем тп лаба\\Veselkov Ч копи€ Ч копи€ (2)\\myfile3.txt");
 	in >> sizeRobot;
 	in >> sizeArmorCar;
 	in >> sizeFighter;
 	in >> sizeTank;
 	in >> sizeHowitzer;
+	std::getline(in, read);
 	tank = (Tank**)realloc(tank, (sizeTank+1) * sizeof(Tank));
 	robot = (Robot**)realloc(robot, (sizeRobot+1) * sizeof(Robot));
 	armorcar = (ArmorCar**)realloc(armorcar, (sizeArmorCar+1) * sizeof(ArmorCar));
 	fighter = (Fighter**)realloc(fighter, (sizeFighter+1) * sizeof(Fighter));
 	howitzer = (Howitzer**)realloc(howitzer, (sizeHowitzer+1) * sizeof(Howitzer));
+	RUSArmyFactory rus;
+	USAArmyFactory usa;
 	for (int i = 1; i < sizeTank+1; i++)
 	{
-		tank[i] = new Tank;
-		in.ignore(32767, '\n');
-		std::getline(in, schet);
-		student[i]->setfioo(schet);
-		in >> ichet;
-		student[i]->setgrupp(ichet);
-		in.ignore(32767, '\n');
-		std::getline(in, schet);
-		student[i]->setspecialtyy(schet);
-		in >> ichet;
-		student[i]->setcoursee(ichet);
-		in >> dchet;
-		student[i]->setballl(dchet);
+		std::getline(in, read);
+		if (read == "RUS")
+		{
+			tank[i] = rus.createTank();
+			tank[i]->set_Country(read);
+			std::getline(in, read);
+			tank[i]->set_Name(read);
+			std::getline(in, read);
+			tank[i]->set_Power(read);
+			std::getline(in, read);
+			tank[i]->set_Length(read);
+			std::getline(in, read);
+			tank[i]->set_Gun(read);
+			std::getline(in, read);
+			tank[i]->set_Caliber(read);
+			std::getline(in, read);
+			tank[i]->set_Year(read);
+			std::getline(in, read);
+			tank[i]->set_Kolvo(read);
+			std::getline(in, read);
+			tank[i]->set_Weight(read);
+			std::getline(in, read);
+			tank[i]->set_Mans(read);
+			std::getline(in, read);
+			tank[i]->set_Walk(read);
+		}
+		else
+		{
+			tank[i] = usa.createTank();
+			tank[i]->set_Country(read);
+			std::getline(in, read);
+			tank[i]->set_Name(read);
+			std::getline(in, read);
+			tank[i]->set_Power(read);
+			std::getline(in, read);
+			tank[i]->set_Length(read);
+			std::getline(in, read);
+			tank[i]->set_Gun(read);
+			std::getline(in, read);
+			tank[i]->set_Caliber(read);
+			std::getline(in, read);
+			tank[i]->set_Year(read);
+			std::getline(in, read);
+			tank[i]->set_Kolvo(read);
+			std::getline(in, read);
+			tank[i]->set_Weight(read);
+			std::getline(in, read);
+			tank[i]->set_Mans(read);
+			std::getline(in, read);
+			tank[i]->set_Walk(read);
+		}
+		
+	}
+	for (int i = 1; i < sizeRobot + 1; i++)
+	{
+		std::getline(in, read);
+		if (read == "RUS")
+		{
+			robot[i] = rus.createRobot();
+			robot[i]->set_Country(read);
+			std::getline(in, read);
+			robot[i]->set_Name(read);
+			std::getline(in, read);
+			robot[i]->set_Power(read);
+			std::getline(in, read);
+			robot[i]->set_Gun(read);
+			std::getline(in, read);
+			robot[i]->set_Caliber(read);
+			std::getline(in, read);
+			robot[i]->set_Year(read);
+			std::getline(in, read);
+			robot[i]->set_Kolvo(read);
+			std::getline(in, read);
+			robot[i]->set_Weight(read);
+			std::getline(in, read);
+			robot[i]->set_Mans(read);
+			std::getline(in, read);
+			robot[i]->set_Walk(read);
+		}
+		else
+		{
+			robot[i] = usa.createRobot();
+			robot[i]->set_Country(read);
+			std::getline(in, read);
+			robot[i]->set_Name(read);
+			std::getline(in, read);
+			robot[i]->set_Power(read);
+			std::getline(in, read);
+			robot[i]->set_Gun(read);
+			std::getline(in, read);
+			robot[i]->set_Caliber(read);
+			std::getline(in, read);
+			robot[i]->set_Year(read);
+			std::getline(in, read);
+			robot[i]->set_Kolvo(read);
+			std::getline(in, read);
+			robot[i]->set_Weight(read);
+			std::getline(in, read);
+			robot[i]->set_Mans(read);
+			std::getline(in, read);
+			robot[i]->set_Walk(read);
+		}
+
+	}
+	for (int i = 1; i < sizeArmorCar + 1; i++)
+	{
+		std::getline(in, read);
+		if (read == "RUS")
+		{
+			armorcar[i] = rus.createArmorCar();
+			armorcar[i]->set_Country(read);
+			std::getline(in, read);
+			armorcar[i]->set_Name(read);
+			std::getline(in, read);
+			armorcar[i]->set_Power(read);
+			std::getline(in, read);
+			armorcar[i]->set_Length(read);
+			std::getline(in, read);
+			armorcar[i]->set_Gun(read);
+			std::getline(in, read);
+			armorcar[i]->set_Caliber(read);
+			std::getline(in, read);
+			armorcar[i]->set_Year(read);
+			std::getline(in, read);
+			armorcar[i]->set_Kolvo(read);
+			std::getline(in, read);
+			armorcar[i]->set_Weight(read);
+			std::getline(in, read);
+			armorcar[i]->set_Mans(read);
+			std::getline(in, read);
+			armorcar[i]->set_Walk(read);
+		}
+		else
+		{
+			armorcar[i] = usa.createArmorCar();
+			armorcar[i]->set_Country(read);
+			std::getline(in, read);
+			armorcar[i]->set_Name(read);
+			std::getline(in, read);
+			armorcar[i]->set_Power(read);
+			std::getline(in, read);
+			armorcar[i]->set_Length(read);
+			std::getline(in, read);
+			armorcar[i]->set_Gun(read);
+			std::getline(in, read);
+			armorcar[i]->set_Caliber(read);
+			std::getline(in, read);
+			armorcar[i]->set_Year(read);
+			std::getline(in, read);
+			armorcar[i]->set_Kolvo(read);
+			std::getline(in, read);
+			armorcar[i]->set_Weight(read);
+			std::getline(in, read);
+			armorcar[i]->set_Mans(read);
+			std::getline(in, read);
+			armorcar[i]->set_Walk(read);
+		}
+
+	}
+	for (int i = 1; i < sizeFighter + 1; i++)
+	{
+		std::getline(in, read);
+		if (read == "RUS")
+		{
+			fighter[i] = rus.createFighter();
+			fighter[i]->set_Country(read);
+			std::getline(in, read);
+			fighter[i]->set_Name(read);
+			std::getline(in, read);
+			fighter[i]->set_Power(read);
+			std::getline(in, read);
+			fighter[i]->set_Gun(read);
+			std::getline(in, read);
+			fighter[i]->set_Caliber(read);
+			std::getline(in, read);
+			fighter[i]->set_Year(read);
+			std::getline(in, read);
+			fighter[i]->set_Kolvo(read);
+			std::getline(in, read);
+			fighter[i]->set_Weight(read);
+			std::getline(in, read);
+			fighter[i]->set_Mans(read);
+			std::getline(in, read);
+			fighter[i]->set_Walk(read);
+		}
+		else
+		{
+			fighter[i] = usa.createFighter();
+			fighter[i]->set_Country(read);
+			std::getline(in, read);
+			fighter[i]->set_Name(read);
+			std::getline(in, read);
+			fighter[i]->set_Power(read);
+			std::getline(in, read);
+			fighter[i]->set_Gun(read);
+			std::getline(in, read);
+			fighter[i]->set_Caliber(read);
+			std::getline(in, read);
+			fighter[i]->set_Year(read);
+			std::getline(in, read);
+			fighter[i]->set_Kolvo(read);
+			std::getline(in, read);
+			fighter[i]->set_Weight(read);
+			std::getline(in, read);
+			fighter[i]->set_Mans(read);
+			std::getline(in, read);
+			fighter[i]->set_Walk(read);
+		}
+	}
+	for (int i = 1; i < sizeHowitzer + 1; i++)
+	{
+		std::getline(in, read);
+		if (read == "RUS")
+		{
+			howitzer[i] = rus.createHowitzer();
+			howitzer[i]->set_Country(read);
+			std::getline(in, read);
+			howitzer[i]->set_Name(read);
+			std::getline(in, read);
+			howitzer[i]->set_Power(read);
+			std::getline(in, read);
+			howitzer[i]->set_Gun(read);
+			std::getline(in, read);
+			howitzer[i]->set_Caliber(read);
+			std::getline(in, read);
+			howitzer[i]->set_Year(read);
+			std::getline(in, read);
+			howitzer[i]->set_Kolvo(read);
+			std::getline(in, read);
+			howitzer[i]->set_Weight(read);
+			std::getline(in, read);
+			howitzer[i]->set_Mans(read);
+			std::getline(in, read);
+			howitzer[i]->set_Walk(read);
+		}
+		else
+		{
+			howitzer[i] = usa.createHowitzer();
+			howitzer[i]->set_Country(read);
+			std::getline(in, read);
+			howitzer[i]->set_Name(read);
+			std::getline(in, read);
+			howitzer[i]->set_Power(read);
+			std::getline(in, read);
+			howitzer[i]->set_Gun(read);
+			std::getline(in, read);
+			howitzer[i]->set_Caliber(read);
+			std::getline(in, read);
+			howitzer[i]->set_Year(read);
+			std::getline(in, read);
+			howitzer[i]->set_Kolvo(read);
+			std::getline(in, read);
+			howitzer[i]->set_Weight(read);
+			std::getline(in, read);
+			howitzer[i]->set_Mans(read);
+			std::getline(in, read);
+			howitzer[i]->set_Walk(read);
+		}
+
 	}
 	in.close();
 }
 
 void save()
 {
-
+	std::ofstream out("F:\\”чеба\\3 курс 1 сем тп лаба\\Veselkov Ч копи€ Ч копи€ (2)\\myfile3.txt");
+	out << sizeRobot << "\n";
+	out << sizeArmorCar << "\n";
+	out << sizeFighter << "\n";
+	out << sizeTank << "\n";
+	out << sizeHowitzer << "\n";
+	for (int i = 1; i < sizeTank + 1; i++)
+	{
+		out << tank[i]->getCountry() << "\n";
+		out << tank[i]->getName() << "\n";
+		out << tank[i]->getPower() << "\n";
+		out << tank[i]->getLength() << "\n";
+		out << tank[i]->getGun() << "\n";
+		out << tank[i]->getCaliber() << "\n";
+		out << tank[i]->getYear() << "\n";
+		out << tank[i]->getKolvo() << "\n";
+		out << tank[i]->getWeight() << "\n";
+		out << tank[i]->getMans() << "\n";
+		out << tank[i]->getWalk() << "\n";
+	}
+	for (int i = 1; i < sizeRobot + 1; i++)
+	{
+		out << robot[i]->getCountry() << "\n";
+		out << robot[i]->getName() << "\n";
+		out << robot[i]->getPower() << "\n";
+		out << robot[i]->getGun() << "\n";
+		out << robot[i]->getCaliber() << "\n";
+		out << robot[i]->getYear() << "\n";
+		out << robot[i]->getKolvo() << "\n";
+		out << robot[i]->getWeight() << "\n";
+		out << robot[i]->getMans() << "\n";
+		out << robot[i]->getWalk() << "\n";
+	}
+	for (int i = 1; i < sizeArmorCar + 1; i++)
+	{
+		out << armorcar[i]->getCountry() << "\n";
+		out << armorcar[i]->getName() << "\n";
+		out << armorcar[i]->getPower() << "\n";
+		out << armorcar[i]->getLength() << "\n";
+		out << armorcar[i]->getGun() << "\n";
+		out << armorcar[i]->getCaliber() << "\n";
+		out << armorcar[i]->getYear() << "\n";
+		out << armorcar[i]->getKolvo() << "\n";
+		out << armorcar[i]->getWeight() << "\n";
+		out << armorcar[i]->getMans() << "\n";
+		out << armorcar[i]->getWalk() << "\n";
+	}
+	for (int i = 1; i < sizeFighter + 1; i++)
+	{
+		out << fighter[i]->getCountry() << "\n";
+		out << fighter[i]->getName() << "\n";
+		out << fighter[i]->getPower() << "\n";
+		out << fighter[i]->getGun() << "\n";
+		out << fighter[i]->getCaliber() << "\n";
+		out << fighter[i]->getYear() << "\n";
+		out << fighter[i]->getKolvo() << "\n";
+		out << fighter[i]->getWeight() << "\n";
+		out << fighter[i]->getMans() << "\n";
+		out << fighter[i]->getWalk() << "\n";
+	}
+	for (int i = 1; i < sizeHowitzer + 1; i++)
+	{
+		out << howitzer[i]->getCountry() << "\n";
+		out << howitzer[i]->getName() << "\n";
+		out << howitzer[i]->getPower() << "\n";
+		out << howitzer[i]->getGun() << "\n";
+		out << howitzer[i]->getCaliber() << "\n";
+		out << howitzer[i]->getYear() << "\n";
+		out << howitzer[i]->getKolvo() << "\n";
+		out << howitzer[i]->getWeight() << "\n";
+		out << howitzer[i]->getMans() << "\n";
+		out << howitzer[i]->getWalk() << "\n";
+	}
+	out.close();
 }
 
 
@@ -76,6 +399,7 @@ int mistake(int a)
 		std::cin >> i;
 		if (i == -1)
 		{
+			std::cin.ignore(32767, '\n');
 			return i;
 			break;
 		}
@@ -102,6 +426,7 @@ int mistake_(int a)
 		std::cin >> i;
 		if (i == -1)
 		{
+			std::cin.ignore(32767, '\n');
 			return i;
 			break;
 		}

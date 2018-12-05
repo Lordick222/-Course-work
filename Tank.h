@@ -62,6 +62,7 @@ public:
 	void set_Weight(std::string a);
 	void set_Mans(std::string a);
 	void set_Walk(std::string a);
+	void set_Country(std::string a);
 
 	virtual void EnterTank() = 0;
 	virtual void OutTank() = 0;
