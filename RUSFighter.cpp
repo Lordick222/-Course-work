@@ -10,16 +10,17 @@ RUSFighter::RUSFighter(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	Fighter(name, power,  gun, caliber, year, kolvo, weight, mans)
 {
-	m_walk = walk;
+	m_walk = walk; m_country = country;
 }
 
 RUSFighter::RUSFighter(const RUSFighter &Fighter) :
 	Fighter(Fighter.m_name, Fighter.m_power,  Fighter.m_gun,
 		Fighter.m_caliber, Fighter.m_walk, Fighter.m_year, Fighter.m_kolvo,
-		Fighter.m_weight, Fighter.m_mans)
+		Fighter.m_weight, Fighter.m_mans, Fighter.m_country)
 
 {
 }

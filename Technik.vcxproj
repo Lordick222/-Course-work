@@ -20,17 +20,22 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArmorCar.h" />
+    <ClInclude Include="ArmyFactory.h" />
+    <ClInclude Include="Client.h" />
     <ClInclude Include="Fighter.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Howitzer.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="Robot.h" />
     <ClInclude Include="RUSArmorCar.h" />
+    <ClInclude Include="RUSArmyFactory.h" />
     <ClInclude Include="RUSFighter.h" />
     <ClInclude Include="RUSHowitzer.h" />
     <ClInclude Include="RUSRobot.h" />
     <ClInclude Include="RUSTank.h" />
     <ClInclude Include="Tank.h" />
     <ClInclude Include="USAArmorCar.h" />
+    <ClInclude Include="USAArmyFactory.h" />
     <ClInclude Include="USAFighter.h" />
     <ClInclude Include="USAHowitzer.h" />
     <ClInclude Include="USARobot.h" />
@@ -42,6 +47,7 @@
     <ClCompile Include="Howitzer.cpp" />
     <ClCompile Include="Robot.cpp" />
     <ClCompile Include="RUSArmorCar.cpp" />
+    <ClCompile Include="RUSArmyFactory.cpp" />
     <ClCompile Include="RUSFighter.cpp" />
     <ClCompile Include="RUSHowitzer.cpp" />
     <ClCompile Include="RUSRobot.cpp" />
@@ -49,10 +55,14 @@
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Tank.cpp" />
     <ClCompile Include="USAArmorCar.cpp" />
+    <ClCompile Include="USAArmyFactory.cpp" />
     <ClCompile Include="USAFighter.cpp" />
     <ClCompile Include="USAHowitzer.cpp" />
     <ClCompile Include="USARobot.cpp" />
     <ClCompile Include="USATank.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Technik.rc" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

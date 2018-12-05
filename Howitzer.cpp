@@ -9,7 +9,8 @@ Howitzer::Howitzer(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	m_name(name),
 	m_power(power),
 	m_gun(gun),
@@ -18,7 +19,8 @@ Howitzer::Howitzer(std::string name,						//Builder
 	m_year(year),
 	m_kolvo(kolvo),
 	m_weight(weight),
-	m_mans(mans)
+	m_mans(mans),
+	m_country(country)
 {
 }
 
@@ -31,7 +33,8 @@ Howitzer::Howitzer(const Howitzer &tank)						//Builder
 	m_year(tank.m_year),
 	m_kolvo(tank.m_kolvo),
 	m_weight(tank.m_weight),
-	m_mans(tank.m_mans)
+	m_mans(tank.m_mans),
+	m_country(tank.m_country)
 {
 }
 
@@ -46,6 +49,7 @@ std::string Howitzer::getYear() { return m_year; };
 std::string Howitzer::getKolvo() { return m_kolvo; };
 std::string Howitzer::getWeight() { return m_weight; };
 std::string Howitzer::getMans() { return m_mans; };
+std::string Howitzer::getCountry() { return m_country; };
 
 
 void Howitzer::setName() {

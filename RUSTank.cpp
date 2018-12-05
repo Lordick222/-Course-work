@@ -11,16 +11,18 @@ RUSTank::RUSTank(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	Tank(name, power, length, gun, caliber, year, kolvo, weight, mans)
 {
 	m_walk = walk;
+	m_country = country;
 }
 
 RUSTank::RUSTank(const RUSTank &tank) :
 	Tank(tank.m_name, tank.m_power, tank.m_length, tank.m_gun,
 		tank.m_caliber, tank.m_walk, tank.m_year, tank.m_kolvo,
-		tank.m_weight, tank.m_mans)
+		tank.m_weight, tank.m_mans, tank.m_country)
 
 {
 }
@@ -42,7 +44,7 @@ void RUSTank::EnterTank() {
 }
 void RUSTank::OutTank() {
 	std::cout << "\n\t";
-	std::cout << "USA Tank : \t\t\t\t" << getName() << "\n\t";
+	std::cout << "RUS Tank : \t\t\t\t" << getName() << "\n\t";
 	std::cout << "Power of gun : \t\t\t\t" << getPower() << "\n\t";
 	std::cout << "Range of gun : \t\t\t\t" << getLength() << " KM  \n\t";
 	std::cout << "Gun : \t\t\t\t\t" << getGun() << "\n\t";

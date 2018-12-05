@@ -10,16 +10,17 @@ RUSArmorCar::RUSArmorCar(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	ArmorCar(name, power, length, gun, caliber, walk, year, kolvo, weight, mans)
 {
-	m_walk = walk;
+	m_walk = walk; m_country = country;
 }
 
 RUSArmorCar::RUSArmorCar(const RUSArmorCar &ArmorCar) :
 	ArmorCar(ArmorCar.m_name, ArmorCar.m_power, ArmorCar.m_length, ArmorCar.m_gun,
 		ArmorCar.m_caliber, ArmorCar.m_walk, ArmorCar.m_year, ArmorCar.m_kolvo,
-		ArmorCar.m_weight, ArmorCar.m_mans)
+		ArmorCar.m_weight, ArmorCar.m_mans, ArmorCar.m_country)
 
 {
 }

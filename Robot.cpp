@@ -7,7 +7,8 @@ Robot::Robot(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	m_name(name),
 	m_power(power),
 	m_gun(gun),
@@ -16,7 +17,8 @@ Robot::Robot(std::string name,						//Builder
 	m_year(year),
 	m_kolvo(kolvo),
 	m_weight(weight),
-	m_mans(mans)
+	m_mans(mans),
+	m_country(country)
 {
 }
 
@@ -29,7 +31,8 @@ Robot::Robot(const Robot &robot)						//Builder
 	m_year(robot.m_year),
 	m_kolvo(robot.m_kolvo),
 	m_weight(robot.m_weight),
-	m_mans(robot.m_mans)
+	m_mans(robot.m_mans),
+	m_country(robot.m_country)
 {
 }
 
@@ -44,6 +47,7 @@ std::string Robot::getYear() { return m_year; };
 std::string Robot::getKolvo() { return m_kolvo; };
 std::string Robot::getWeight() { return m_weight; };
 std::string Robot::getMans() { return m_mans; };
+std::string Robot::getCountry() { return m_country; };
 
 
 void Robot::setName() {

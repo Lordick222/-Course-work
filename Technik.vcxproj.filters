@@ -81,6 +81,21 @@
     <ClInclude Include="USAFighter.h">
       <Filter>Файлы заголовков\USA</Filter>
     </ClInclude>
+    <ClInclude Include="ArmyFactory.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="USAArmyFactory.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="RUSArmyFactory.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="RUSTank.cpp">
@@ -131,5 +146,16 @@
     <ClCompile Include="RUSFighter.cpp">
       <Filter>Исходные файлы\Rus</Filter>
     </ClCompile>
+    <ClCompile Include="USAArmyFactory.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="RUSArmyFactory.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Technik.rc">
+      <Filter>Файлы заголовков\Файлы ресурсов</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

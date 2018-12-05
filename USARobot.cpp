@@ -8,16 +8,17 @@ USARobot::USARobot(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	Robot(name, power, gun, caliber, year, kolvo, weight, mans)
 {
-	m_walk = walk;
+	m_walk = walk; m_country = country;
 }
 
 USARobot::USARobot(const USARobot &tank) :
 	Robot(tank.m_name, tank.m_power, tank.m_gun,
 		tank.m_caliber, tank.m_walk, tank.m_year, tank.m_kolvo,
-		tank.m_weight, tank.m_mans)
+		tank.m_weight, tank.m_mans, tank.m_country)
 
 {
 }

@@ -9,7 +9,8 @@ Fighter::Fighter(std::string name,						//Builder
 	std::string year,
 	std::string kolvo,
 	std::string weight,
-	std::string mans) :
+	std::string mans,
+	std::string country) :
 	m_name(name),
 	m_power(power),
 	m_gun(gun),
@@ -18,7 +19,8 @@ Fighter::Fighter(std::string name,						//Builder
 	m_year(year),
 	m_kolvo(kolvo),
 	m_weight(weight),
-	m_mans(mans)
+	m_mans(mans),
+	m_country(country)
 {
 }
 
@@ -31,7 +33,8 @@ Fighter::Fighter(const Fighter &Fighter)						//Builder
 	m_year(Fighter.m_year),
 	m_kolvo(Fighter.m_kolvo),
 	m_weight(Fighter.m_weight),
-	m_mans(Fighter.m_mans)
+	m_mans(Fighter.m_mans),
+	m_country(Fighter.m_country)
 {
 }
 
@@ -46,6 +49,7 @@ std::string Fighter::getYear() { return m_year; };
 std::string Fighter::getKolvo() { return m_kolvo; };
 std::string Fighter::getWeight() { return m_weight; };
 std::string Fighter::getMans() { return m_mans; };
+std::string Fighter::getCountry() { return m_country; };
 
 
 void Fighter::setName() {

@@ -13,7 +13,8 @@ public:
 		std::string year = "",
 		std::string kolvo = "",
 		std::string weight = "",
-		std::string mans = "");
+		std::string mans = "",
+		std::string country = "RUS");
 
 	RUSTank(const RUSTank &tank);
 

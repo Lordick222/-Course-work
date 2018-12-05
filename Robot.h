@@ -12,6 +12,7 @@ protected:
 	std::string m_kolvo;
 	std::string m_weight;
 	std::string m_mans;
+	std::string m_country;
 public:
 	Robot(std::string name = "",
 		std::string power = "",
@@ -21,7 +22,8 @@ public:
 		std::string year = "",
 		std::string kolvo = "",
 		std::string weight = "",
-		std::string mans = "");
+		std::string mans = "",
+		std::string m_country="");
 
 	Robot(const Robot &robot);
 
@@ -35,6 +37,7 @@ public:
 	std::string getKolvo();
 	std::string getWeight();
 	std::string getMans();
+	std::string getCountry();
 
 	void setName();
 	void setPower();
